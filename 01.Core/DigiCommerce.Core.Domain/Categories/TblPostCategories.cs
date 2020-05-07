@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using DigiCommerce.Core.Domain.Shared;
 
-namespace DigiCommerce.Core.Domain.PostCategories
+namespace DigiCommerce.Core.Domain.Categories
 {
     [Table("Tbl_PostCategories")]
     public partial class TblPostCategories: BaseEntity
@@ -12,7 +12,7 @@ namespace DigiCommerce.Core.Domain.PostCategories
         public string CategoryName { get; set; }
         [Required,
          StringLength(500),
-         Index(IsUnique = true),
+         //Index(IsUnique = true),
         Column(TypeName = "VARCHAR")]
         public string Slug { get; set; }
         public bool ShowInFooter { get; set; }

@@ -1,15 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain;
+using Devesprit.Data.Domain;
 using DigiCommerce.Core.Domain.Shared;
+using DigiCommerce.Core.Domain.Users.VipGroups;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.Products
 {
     [Table("Tbl_ProductCheckoutAttributeOptions")]
     public partial class TblProductCheckoutAttributeOptions : BaseEntity
     {
         [Required]
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public int ProductCheckoutAttributeId { get; set; }
         public virtual TblProductCheckoutAttributes ProductCheckoutAttribute { get; set; }
         [Required]

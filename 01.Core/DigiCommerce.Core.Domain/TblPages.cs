@@ -14,7 +14,7 @@ namespace Devesprit.Data.Domain
         public string Title { get; set; }
         [Required, 
          StringLength(500),
-         Index(IsUnique = true),
+        // Index(IsUnique = true),
         Column(TypeName = "VARCHAR")]
         public string Slug { get; set; }
         public string MetaDescription { get; set; }
@@ -24,7 +24,7 @@ namespace Devesprit.Data.Domain
         public bool ShowInUserMenuBar { get; set; }
         public string PanelTitle { get; set; }
         public bool Published { get; set; }
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public bool ShowAsWebsiteDefaultPage { get; set; }
     }
 }

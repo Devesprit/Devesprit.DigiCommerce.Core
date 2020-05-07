@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace DigiCommerce.Core.Domain.PostCategories
+namespace DigiCommerce.Core.Domain.Categories
 {
     public enum DisplayArea
     {

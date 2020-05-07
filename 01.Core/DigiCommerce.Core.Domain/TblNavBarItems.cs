@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using DigiCommerce.Core.Domain;
+using DigiCommerce.Core.Domain.Categories;
 using DigiCommerce.Core.Domain.Shared;
 
 namespace Devesprit.Data.Domain

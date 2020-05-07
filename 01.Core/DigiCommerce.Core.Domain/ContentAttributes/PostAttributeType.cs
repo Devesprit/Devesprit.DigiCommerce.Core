@@ -1,4 +1,4 @@
-﻿namespace DigiCommerce.Core.Domain.PostAttributes
+﻿namespace DigiCommerce.Core.Domain.ContentAttributes
 {
     public enum PostAttributeType
     {

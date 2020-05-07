@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
+using Devesprit.Data.Domain;
+using DigiCommerce.Core.Domain.AccessRoles;
+using DigiCommerce.Core.Domain.Products;
+using DigiCommerce.Core.Domain.Users.VipGroups;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.Users
 {
     [Table("Tbl_Users")]
-    public partial class TblUsers:IdentityUser
+    public partial class TblUsers
     {
         [MaxLength(100)]
         public string FirstName { get; set; }
@@ -38,12 +38,5 @@ namespace Devesprit.Data.Domain
         public virtual ICollection<TblUserBookmarks> Wishlist { get; set; }
         public virtual ICollection<TblProductDownloadsLog> DownloadsLog { get; set; }
 
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<TblUsers> manager)
-        {
-            // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
-            var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
-            // Add custom user claims here
-            return userIdentity;
-        }
     }
 }

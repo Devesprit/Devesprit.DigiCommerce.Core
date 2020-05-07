@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using Devesprit.Data.Domain;
-using DigiCommerce.Core.Domain.PostComments;
+using DigiCommerce.Core.Domain.Comments;
 using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.Products

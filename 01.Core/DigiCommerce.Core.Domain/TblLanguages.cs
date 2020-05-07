@@ -14,7 +14,7 @@ namespace Devesprit.Data.Domain
         [Required, MaxLength(10)]
         [Column(TypeName = "VARCHAR")]
         [StringLength(10)]
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public string IsoCode { get; set; }
         public bool IsDefault { get; set; }
         public bool IsRtl { get; set; }

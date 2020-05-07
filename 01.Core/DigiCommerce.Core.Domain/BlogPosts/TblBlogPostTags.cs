@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain.PostTags;
+using DigiCommerce.Core.Domain.ContentTags;
 using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.BlogPosts
@@ -10,6 +10,6 @@ namespace DigiCommerce.Core.Domain.BlogPosts
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }
         public int PostTagId { get; set; }
-        public virtual TblPostTags PostTag { get; set; }
+        public virtual TblContentTags PostTag { get; set; }
     }
 }

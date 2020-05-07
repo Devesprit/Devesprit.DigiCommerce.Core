@@ -19,7 +19,7 @@ namespace Devesprit.Data.Domain
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(450)]
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public string Name { get; set; }
 
         public string Value { get; set; }

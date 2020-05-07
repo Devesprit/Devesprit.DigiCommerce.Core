@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using Devesprit.Data.Domain;
+using DigiCommerce.Core.Domain.ContentAttributes;
 using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.Products

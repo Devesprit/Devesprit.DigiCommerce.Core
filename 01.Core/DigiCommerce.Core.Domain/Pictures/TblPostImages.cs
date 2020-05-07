@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using DigiCommerce.Core.Domain.Shared;
 
-namespace DigiCommerce.Core.Domain.PostImages
+namespace DigiCommerce.Core.Domain.Pictures
 {
     [Table(("Tbl_PostImages"))]
     public partial class TblPostImages : BaseEntity

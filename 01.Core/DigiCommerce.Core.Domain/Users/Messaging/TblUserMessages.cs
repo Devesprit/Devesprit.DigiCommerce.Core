@@ -1,15 +1,14 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain;
 using DigiCommerce.Core.Domain.Shared;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.Users.Messaging
 {
     [Table("Tbl_UserMessages")]
     public partial class TblUserMessages : BaseEntity
     {
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public string UserId { get; set; }
         public virtual TblUsers User { get; set; }
 

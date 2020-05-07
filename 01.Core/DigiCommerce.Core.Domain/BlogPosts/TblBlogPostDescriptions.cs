@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain.PostDescriptions;
+using DigiCommerce.Core.Domain.ContentDescriptions;
 using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.BlogPosts

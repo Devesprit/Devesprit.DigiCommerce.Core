@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using DigiCommerce.Core.Domain;
+using Devesprit.Data.Domain;
 using DigiCommerce.Core.Domain.Shared;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.AccessRoles
 {
-    [Table("Tbl_UserRoles")]
+    [Table("Tbl_AccessRoles")]
     public partial class TblAccessRoles : BaseEntity
     {
-        [Required]
         public string RoleName { get; set; }
         public virtual ICollection<TblRolePermissions> Permissions { get; set; }
     }

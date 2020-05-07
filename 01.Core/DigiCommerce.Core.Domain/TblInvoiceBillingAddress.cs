@@ -10,7 +10,7 @@ namespace Devesprit.Data.Domain
     public partial class TblInvoiceBillingAddress: BaseEntity
     {
         [Required]
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public Guid InvoiceId { get; set; }
         public virtual TblInvoices Invoice { get; set; }
 

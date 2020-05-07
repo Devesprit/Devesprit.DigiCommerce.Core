@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain;
 using DigiCommerce.Core.Domain.Shared;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.AccessRoles
 {
-    [Table("Tbl_UserAccessAreas")]
     public partial class TblAccessAreas : BaseEntity
     {
         public TblAccessAreas()
@@ -20,13 +18,8 @@ namespace Devesprit.Data.Domain
          
         public string ParentAreaName { get; set; }
 
-        [Required]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(500)]
-        [Index(IsClustered = false, IsUnique = false)]
         public string AreaName { get; set; }
 
-        [Required]
         public string AreaNameLocalizationResource { get; set; }
     }
 }

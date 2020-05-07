@@ -1,15 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using DigiCommerce.Core.Domain;
 using DigiCommerce.Core.Domain.Shared;
 
-namespace Devesprit.Data.Domain
+namespace DigiCommerce.Core.Domain.ContentAttributes
 {
     [Table("Tbl_PostAttributesMapping")]
     public partial class TblPostAttributesMapping : BaseEntity
     {
         [Required]
-        [Index(IsClustered = false, IsUnique = false)]
+        //[Index(IsClustered = false, IsUnique = false)]
         public int PostAttributeId { get; set; }
 
         public virtual TblPostAttributes PostAttribute { get; set; }
@@ -21,5 +20,6 @@ namespace Devesprit.Data.Domain
         public string Value { get; set; }
 
         public int DisplayOrder { get; set; }
+        public ContentMainType MainType { get; set; }
     }
 }
