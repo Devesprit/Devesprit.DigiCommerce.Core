@@ -4,8 +4,7 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.BlogPosts
 {
-    [Table("Tbl_BlogPostDescriptions")]
-    public class TblDescriptions : BaseEntity
+    public class TblBlogPostDescriptions : BaseEntity
     {
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }

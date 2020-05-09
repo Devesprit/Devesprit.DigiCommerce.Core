@@ -6,16 +6,6 @@ namespace DigiCommerce.Core.Domain.AccessRoles
 {
     public partial class TblAccessAreas : BaseEntity
     {
-        public TblAccessAreas()
-        {}
-
-        public TblAccessAreas(string parentAreaName, string areaName, string areaNameLocalizationResource)
-        {
-            ParentAreaName = parentAreaName;
-            AreaName = areaName;
-            AreaNameLocalizationResource = areaNameLocalizationResource;
-        }
-         
         public string ParentAreaName { get; set; }
 
         public string AreaName { get; set; }

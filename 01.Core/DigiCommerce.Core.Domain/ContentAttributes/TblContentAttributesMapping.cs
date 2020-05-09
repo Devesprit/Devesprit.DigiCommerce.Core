@@ -4,18 +4,15 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.ContentAttributes
 {
-    [Table("Tbl_PostAttributesMapping")]
-    public partial class TblPostAttributesMapping : BaseEntity
+    public partial class TblContentAttributesMapping : BaseEntity
     {
-        [Required]
-        //[Index(IsClustered = false, IsUnique = false)]
         public int PostAttributeId { get; set; }
 
-        public virtual TblPostAttributes PostAttribute { get; set; }
+        public virtual TblContentAttributes PostAttribute { get; set; }
 
         public int? AttributeOptionId { get; set; }
 
-        public virtual TblPostAttributeOptions AttributeOption { get; set; }
+        public virtual TblContentAttributeOptions AttributeOption { get; set; }
 
         public string Value { get; set; }
 

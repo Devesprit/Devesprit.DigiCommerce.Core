@@ -64,12 +64,10 @@ namespace DigiCommerce.Core.Domain.Products
 
         public virtual ICollection<TblProductImages> Images { get; set; }
         public virtual ICollection<TblProductDescriptions> Descriptions { get; set; }
-        public virtual ICollection<BlogPosts.TblProductTags> Tags { get; set; }
+        public virtual ICollection<TblProductTags> Tags { get; set; }
         public virtual ICollection<TblProductAttributesMapping> Attributes { get; set; }
         public virtual ICollection<TblProductComments> Comments { get; set; }
         public virtual ICollection<TblProductCategories> Categories { get; set; }
-        public virtual ICollection<TblUserRates> UserLikes { get; set; }
-        public virtual ICollection<TblUserBookmarks> UserWishlist { get; set; }
         public virtual ICollection<TblProductDownloadsLog> DownloadsLog { get; set; }
         public virtual ICollection<TblProductCheckoutAttributes> CheckoutAttributes { get; set; }
         public virtual ICollection<TblProductDiscountsForUserGroups> DiscountsForUserGroups { get; set; }

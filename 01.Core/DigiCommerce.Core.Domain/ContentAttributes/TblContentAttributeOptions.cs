@@ -5,14 +5,10 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.ContentAttributes
 {
-    [Table("Tbl_PostAttributeOptions")]
-    public partial class TblPostAttributeOptions : BaseEntity
+    public partial class TblContentAttributeOptions : BaseEntity
     {
-        [Required]
         public int PostAttributeId { get; set; }
-        public virtual TblPostAttributes PostAttribute { get; set; }
-
-        [Required]
+        public virtual TblContentAttributes PostAttribute { get; set; }
         public string Name { get; set; }
     }
 }

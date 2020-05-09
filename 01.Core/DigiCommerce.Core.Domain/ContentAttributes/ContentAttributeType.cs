@@ -1,6 +1,6 @@
 ﻿namespace DigiCommerce.Core.Domain.ContentAttributes
 {
-    public enum PostAttributeType
+    public enum ContentAttributeType
     {
         Text,
         HtmlText,

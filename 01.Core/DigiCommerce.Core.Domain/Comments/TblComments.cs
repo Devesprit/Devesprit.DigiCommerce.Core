@@ -7,18 +7,13 @@ using DigiCommerce.Core.Domain.Users;
 
 namespace DigiCommerce.Core.Domain.Comments
 {
-    [Table("Tbl_PostComments")]
-    public partial class TblPostComments : BaseEntity
+    public partial class TblComments : BaseEntity
     {
-        [Required]
         public string Comment { get; set; }
         public string Quote { get; set; }
-        [Required]
         public DateTime CommentDate { get; set; }
-        //[Index(IsClustered = false, IsUnique = false)]
         public int? ParentCommentId { get; set; }
-        public virtual TblPostComments ParentComment { get; set; }
-        //[Index(IsClustered = false, IsUnique = false)]
+        public virtual TblComments ParentComment { get; set; }
         public string UserId { get; set; }
         public virtual TblUsers User { get; set; }
         public string UserName { get; set; }

@@ -4,12 +4,11 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.BlogPosts
 {
-    [Table("Tbl_BlogPostComments")]
-    public class TblProductComments : BaseEntity
+    public class TblBlogPostComments : BaseEntity
     {
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }
         public int PostCommentsId { get; set; }
-        public virtual TblPostComments PostComments{ get; set; }
+        public virtual TblComments PostComments{ get; set; }
     }
 }

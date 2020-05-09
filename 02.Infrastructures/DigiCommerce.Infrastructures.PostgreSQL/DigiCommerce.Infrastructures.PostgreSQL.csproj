@@ -18,18 +18,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BlogPosts\" />
-    <Folder Include="Categories\" />
-    <Folder Include="Comments\" />
-    <Folder Include="ContentAttributes\" />
-    <Folder Include="ContentDescriptions\" />
-    <Folder Include="ContentTags\" />
-    <Folder Include="Pictures\" />
-    <Folder Include="Products\" />
-    <Folder Include="Shared\" />
-    <Folder Include="Users\Messaging\" />
-    <Folder Include="Users\Notifications\" />
-    <Folder Include="Users\VipGroups\" />
+    <Folder Include="ContentDescriptions\Configs\" />
+    <Folder Include="ContentTags\Configs\" />
+    <Folder Include="Pictures\Configs\" />
+    <Folder Include="Products\Configs\" />
+    <Folder Include="Shared\Configs\" />
+    <Folder Include="Users\Messaging\Configs\" />
+    <Folder Include="Users\Configs\" />
+    <Folder Include="Users\Notifications\Configs\" />
+    <Folder Include="Users\VipGroups\Configs\" />
   </ItemGroup>
 
 </Project>
