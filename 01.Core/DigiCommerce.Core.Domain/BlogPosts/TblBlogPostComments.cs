@@ -8,7 +8,7 @@ namespace DigiCommerce.Core.Domain.BlogPosts
     {
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }
-        public int PostCommentsId { get; set; }
-        public virtual TblComments PostComments{ get; set; }
+        public int CommentsId { get; set; }
+        public virtual TblComments Comments { get; set; }
     }
 }

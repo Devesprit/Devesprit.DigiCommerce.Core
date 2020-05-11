@@ -4,8 +4,8 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.ContentDescriptions
 {
-    [Table("Tbl_PostDescriptions")]
-    public partial class TblPostDescriptions: BaseEntity
+    [Table("Tbl_ContentDescriptions")]
+    public partial class TblContentDescriptions: BaseEntity
     {
         [Required, MaxLength(250)]
         public string Title { get; set; }

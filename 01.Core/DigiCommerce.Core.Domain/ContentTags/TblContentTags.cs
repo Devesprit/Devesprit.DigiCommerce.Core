@@ -4,7 +4,7 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.ContentTags
 {
-    [Table("Tbl_PostTags")]
+    [Table("Tbl_ContentTags")]
     public partial class TblContentTags : BaseEntity
     {
         [Required,

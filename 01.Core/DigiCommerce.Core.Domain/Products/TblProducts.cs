@@ -62,7 +62,7 @@ namespace DigiCommerce.Core.Domain.Products
         public bool HigherUserGroupsCanDownload { get; set; }
         public string LicenseGeneratorServiceId { get; set; }
 
-        public virtual ICollection<TblProductImages> Images { get; set; }
+        public virtual ICollection<TblProductPictures> Pictures { get; set; }
         public virtual ICollection<TblProductDescriptions> Descriptions { get; set; }
         public virtual ICollection<TblProductTags> Tags { get; set; }
         public virtual ICollection<TblProductAttributesMapping> Attributes { get; set; }

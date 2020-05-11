@@ -18,15 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ContentDescriptions\Configs\" />
-    <Folder Include="ContentTags\Configs\" />
-    <Folder Include="Pictures\Configs\" />
-    <Folder Include="Products\Configs\" />
     <Folder Include="Shared\Configs\" />
-    <Folder Include="Users\Messaging\Configs\" />
-    <Folder Include="Users\Configs\" />
-    <Folder Include="Users\Notifications\Configs\" />
-    <Folder Include="Users\VipGroups\Configs\" />
   </ItemGroup>
 
 </Project>

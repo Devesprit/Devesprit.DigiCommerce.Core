@@ -26,7 +26,7 @@ namespace DigiCommerce.Core.Domain.BlogPosts
         public string MetaKeyWords { get; set; }
         public int AvarageRate { get; set; }
 
-        public virtual ICollection<TblBlogPostImages> Images { get; set; }
+        public virtual ICollection<TblBlogPostPictures> Images { get; set; }
         public virtual ICollection<TblBlogPostDescriptions> Descriptions { get; set; }
         public virtual ICollection<TblBlogPostAttributesMapping> AttributesMappings { get; set; }
         public virtual ICollection<TblBlogPostTags> Tags { get; set; }

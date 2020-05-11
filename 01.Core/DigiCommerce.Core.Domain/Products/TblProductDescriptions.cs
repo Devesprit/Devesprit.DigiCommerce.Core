@@ -10,7 +10,7 @@ namespace DigiCommerce.Core.Domain.Products
     {
         public int ProductId { get; set; }
         public virtual TblProducts Product { get; set; }
-        public int PostDescriptionsId { get; set; }
-        public virtual TblPostDescriptions PostDescriptions { get; set; }
+        public int ContentDescriptionId { get; set; }
+        public virtual TblContentDescriptions ContentDescription { get; set; }
     }
 }

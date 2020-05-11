@@ -5,7 +5,7 @@ using DigiCommerce.Core.Domain.Shared;
 namespace DigiCommerce.Core.Domain.Pictures
 {
     [Table(("Tbl_PostImages"))]
-    public partial class TblPostImages : BaseEntity
+    public partial class TblPictures : BaseEntity
     {
         [Required]
         public string ImageUrl { get; set; }

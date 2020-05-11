@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DigiCommerce.Infrastructures.PostgreSQL.BlogPosts.Configs
 {
-    public class TblBlogPostImagesConfiguration : IEntityTypeConfiguration<TblBlogPostImages>
+    public class TblBlogPostImagesConfiguration : IEntityTypeConfiguration<TblBlogPostPictures>
     {
-        public void Configure(EntityTypeBuilder<TblBlogPostImages> builder)
+        public void Configure(EntityTypeBuilder<TblBlogPostPictures> builder)
         {
-            builder.ToTable("Tbl_BlogPostImages");
+            builder.ToTable("Tbl_BlogPostPictures");
         }
     }
 }

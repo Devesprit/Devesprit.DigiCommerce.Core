@@ -9,7 +9,7 @@ namespace DigiCommerce.Core.Domain.BlogPosts
     {
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }
-        public int PostAttributesMappingId { get; set; }
-        public virtual TblContentAttributesMapping PostAttributesMapping { get; set; }
+        public int ContentAttributesMappingId { get; set; }
+        public virtual TblContentAttributesMapping ContentAttributesMapping { get; set; }
     }
 }

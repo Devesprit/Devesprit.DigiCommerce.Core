@@ -4,11 +4,11 @@ using DigiCommerce.Core.Domain.Shared;
 
 namespace DigiCommerce.Core.Domain.BlogPosts
 {
-    public class TblBlogPostImages : BaseEntity
+    public class TblBlogPostPictures : BaseEntity
     {
         public int BlogPostId { get; set; }
         public virtual TblBlogPosts BlogPost { get; set; }
-        public int PostImagesId { get; set; }
-        public virtual TblPostImages PostImages { get; set; }
+        public int PictureId { get; set; }
+        public virtual TblPictures Picture { get; set; }
     }
 }
