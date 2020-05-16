@@ -8,7 +8,8 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.Pictures.Configs
     {
         public void Configure(EntityTypeBuilder<TblPictures> builder)
         {
-            
+            builder.ToTable("Tbl_Pictures");
+            builder.Property(e => e.ImageUrl).IsRequired();
         }
     }
 }

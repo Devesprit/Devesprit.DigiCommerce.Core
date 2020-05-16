@@ -9,8 +9,15 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.ContentAttributes.Configs
         public void Configure(EntityTypeBuilder<TblContentAttributesMapping> builder)
         {
             builder.ToTable("Tbl_ContentAttributesMappingConfiguration");
-            builder.Property(p => p.PostAttributeId).IsRequired();
-            builder.HasIndex(p => p.PostAttributeId).IsUnique(false);
+            builder.Property(p => p.ContentAttributeId).IsRequired();
+            builder.HasIndex(p => p.ContentAttributeId).IsUnique(false);
+            builder.HasOne(d => d.AttributeOption)
+                .WithMany(p => p.ContentAttributesMappings)
+                .HasForeignKey(d => d.AttributeOptionId);
+
+            builder.HasOne(d => d.ContentAttribute)
+                .WithMany(p => p.ContentAttributesMappings)
+                .HasForeignKey(d => d.ContentAttributeId);
         }
     }
 }

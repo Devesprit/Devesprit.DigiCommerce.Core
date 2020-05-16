@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Devesprit.Data.Domain;
+using DigiCommerce.Core.Domain.BlogPosts;
 using DigiCommerce.Core.Domain.Shared;
 using DigiCommerce.Core.Domain.Users;
 
@@ -21,6 +23,8 @@ namespace DigiCommerce.Core.Domain.Comments
         public bool Published { get; set; }
         public bool NotifyWhenReply { get; set; }
         public bool NotifyWhenNewComment { get; set; }
+        public virtual ICollection<TblComments> SubComments { get; set; }
         public ContentMainType MainType { get; set; }
+        public virtual TblBlogPostComments BlogPostComments { get; set; }
     }
 }

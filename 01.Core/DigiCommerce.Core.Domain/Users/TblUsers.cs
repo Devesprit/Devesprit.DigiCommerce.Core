@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Devesprit.Data.Domain;
 using DigiCommerce.Core.Domain.AccessRoles;
+using DigiCommerce.Core.Domain.Comments;
 using DigiCommerce.Core.Domain.Products;
 using DigiCommerce.Core.Domain.Users.VipGroups;
 
@@ -37,6 +38,7 @@ namespace DigiCommerce.Core.Domain.Users
         public virtual ICollection<TblUserRates> Likes { get; set; }
         public virtual ICollection<TblUserBookmarks> Wishlist { get; set; }
         public virtual ICollection<TblProductDownloadsLog> DownloadsLog { get; set; }
+        public virtual ICollection<TblComments> Comments { get; set; }
 
     }
 }

@@ -12,6 +12,9 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.AccessRoles.Configs
             builder.Property(p => p.RoleId).IsRequired();
             builder.Property(p => p.HaveAccess).IsRequired();
             builder.Property(p => p.AreaName).IsRequired();
+            builder.HasOne(d => d.Role)
+                .WithMany(p => p.RolePermissions)
+                .HasForeignKey(d => d.RoleId);
         }
     }
 }

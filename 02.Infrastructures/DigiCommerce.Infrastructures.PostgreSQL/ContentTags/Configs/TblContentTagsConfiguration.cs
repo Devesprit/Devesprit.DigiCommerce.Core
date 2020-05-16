@@ -8,7 +8,16 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.ContentTags.Configs
     {
         public void Configure(EntityTypeBuilder<TblContentTags> builder)
         {
-            
+            builder.ToTable("Tbl_ContentTags");
+
+            builder.HasIndex(e => e.Tag)
+                .HasName("IX_Tag")
+                .IsUnique();
+
+            builder.Property(e => e.Tag)
+                .IsRequired()
+                .HasMaxLength(400)
+                .IsUnicode(false);
         }
     }
 }

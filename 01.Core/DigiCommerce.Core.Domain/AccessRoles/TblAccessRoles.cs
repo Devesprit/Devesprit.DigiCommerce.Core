@@ -10,6 +10,6 @@ namespace DigiCommerce.Core.Domain.AccessRoles
     public partial class TblAccessRoles : BaseEntity
     {
         public string RoleName { get; set; }
-        public virtual ICollection<TblRolePermissions> Permissions { get; set; }
+        public virtual ICollection<TblRolePermissions> RolePermissions { get; set; }
     }
 }

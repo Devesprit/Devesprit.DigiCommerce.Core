@@ -13,6 +13,13 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.Comments.Configs
             builder.Property(p => p.CommentDate).IsRequired();
             builder.HasIndex(p => p.ParentCommentId).IsUnique(false);
             builder.HasIndex(p => p.UserId).IsUnique(false);
+            builder.HasOne(d => d.ParentComment)
+                .WithMany(p => p.SubComments)
+                .HasForeignKey(d => d.ParentCommentId);
+
+            builder.HasOne(d => d.User)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(d => d.UserId);
         }
     }
 }

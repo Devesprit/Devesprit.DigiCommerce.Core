@@ -10,5 +10,6 @@ namespace DigiCommerce.Core.Domain.ContentAttributes
         public ContentAttributeType AttributeType { get; set; }
         public string Name { get; set; }
         public virtual ICollection<TblContentAttributeOptions> Options { get; set; }
+        public virtual ICollection<TblContentAttributesMapping> ContentAttributesMappings { get; set; }
     }
 }

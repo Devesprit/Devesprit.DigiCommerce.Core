@@ -14,6 +14,9 @@ namespace DigiCommerce.Infrastructures.PostgreSQL.Categories.Configs
                 .HasMaxLength(500)
                 .IsRequired()
                 .HasColumnType("VARCHAR");
+            builder.HasOne(d => d.ParentCategory)
+                .WithMany(p => p.SubCategories)
+                .HasForeignKey(d => d.ParentCategoryId);
         }
     }
 }
